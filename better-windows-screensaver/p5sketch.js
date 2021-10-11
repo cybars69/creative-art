@@ -8,7 +8,7 @@ var name_;
 
 function setup() {
     size = Math.min(displayWidth, displayHeight)
-    createCanvas(size, size);
+    createCanvas(size - 100, size - 100);
     background(0);
 }
 

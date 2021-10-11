@@ -30,17 +30,17 @@ function draw() {
 
 
     for (var i = 0; i < n_points; i++) {
-        var tl_x = -60 + noise(15 + frameCount * 0.004) * (width + 120);
-        var tl_y = -60 + noise(30 + frameCount * 0.004) * (height + 120);
+        var tl_x = -60 + noise(15 + frameCount * 0.007) * (width + 120);
+        var tl_y = -60 + noise(30 + frameCount * 0.007) * (height + 120);
         x_ = tl_x + circles_rad[i] * cos(radians(start_angle + 360.0 * i / n_points));
         y_ = tl_y + circles_rad[i] * sin(radians(start_angle + 360.0 * i / n_points));
 
-        fill(-10 + noise(5 + frameCount * 0.01) * 255, -10 + noise(15 + frameCount * 0.008) * 255, -10 + noise(30 + frameCount * 0.007) * 255, 50);
+        fill(-10 + noise(5 + frameCount * 0.04) * 255, -10 + noise(15 + frameCount * 0.04) * 255, -10 + noise(30 + frameCount * 0.04) * 255, 50);
 
         ellipse(x_, y_, 6, 6);
     }
 
-    start_angle = -180 + 360 * noise(frameCount * 0.001)
+    start_angle = -180 + 360 * noise(frameCount * 0.003)
 
     // start_angle += 1 * sin(radians(frameCount / 2));
 

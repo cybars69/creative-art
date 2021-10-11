@@ -40,7 +40,7 @@ function draw() {
         ellipse(x_, y_, 6, 6);
     }
 
-    start_angle = -180 + 360 * noise(frameCount * 0.003)
+    start_angle = -180 + 360 * noise(frameCount * 0.001)
 
     // start_angle += 1 * sin(radians(frameCount / 2));
 
